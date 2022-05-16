@@ -27,14 +27,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-.spacer {
-    height: 1250px;
-}
-
-.tinyspacer {
-    height: 750px;
-}
-
 .info {
     object-fit: cover;
     overflow: hidden;
