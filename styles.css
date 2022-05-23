@@ -4,14 +4,14 @@
     #282b30
     #1e2124 */
 
-/* Element Styling Attributes */
+/* Elements */
 
 body {
     justify-content: center;
     background-color: #36393e;
 }
 
-/* Basic Class Styling Attributes */
+/* Classes */
 
 .FadeInOut_WP1 {
     animation-name: slidefromleft;
@@ -86,7 +86,7 @@ body {
     justify-self: center;
   }
 
-/* Advanced Class Styling Attributes */
+/* Advanced Classes */
 
 h1.welcome {
     text-align: center;
