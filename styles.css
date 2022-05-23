@@ -9,6 +9,7 @@
 body {
     justify-content: center;
     background-color: #36393e;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Classes */
@@ -93,18 +94,15 @@ h1.welcome {
     margin: auto;
     margin-top: 20%;
     font-size: 60px;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 h1.preintro {
     text-align: center;
     font-size: 45px;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 h1.intro {
     font-size: 45px;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 p.textarea {
@@ -114,7 +112,6 @@ p.textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 img.info {
