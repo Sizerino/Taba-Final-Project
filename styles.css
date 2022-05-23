@@ -22,7 +22,7 @@ body {
 
 .FadeInOut_WP2 {
     animation-name: appear;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
