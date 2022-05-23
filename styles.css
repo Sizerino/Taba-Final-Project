@@ -68,7 +68,10 @@ body {
       "e e e e f f f f"
       "g g g g h h h h"
       "g g g g h h h h"
-      "g g g g h h h h";
+      "g g g g h h h h"
+      "i i i i j j j j"
+      "i i i i j j j j"
+      "i i i i j j j j";
   }
   .item1 {
     grid-area: a;
@@ -85,6 +88,26 @@ body {
   .item4 {
     grid-area: d;
     justify-self: center;
+  }
+  .item5 {
+    grid-area: e;
+    justify-self: center;
+  }
+  .item6 {
+    grid-area: f;
+    justify-self: center;
+  }
+  .item7 {
+    grid-area: g;
+    justify-self: center;
+  }
+  .item8 {
+    grid-area: h;
+    justify-self: center;
+  }
+
+  .center {
+      text-align: center;
   }
 
 /* Advanced Classes */
