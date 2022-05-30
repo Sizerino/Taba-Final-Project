@@ -110,6 +110,17 @@ body {
       text-align: center;
   }
 
+  .container {
+    background-color: #282b30;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    color: #ffffff;
+}
+
 /* Advanced Classes */
 
 h1.welcome {
