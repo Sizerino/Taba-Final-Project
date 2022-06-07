@@ -1,9 +1,3 @@
-/* Color Pallete:
-    #424549
-    #36393e
-    #282b30
-    #1e2124 */
-
 /* Elements */
 
 body {
@@ -54,58 +48,58 @@ body {
     gap: 10px;
     grid-auto-rows: 100px;
     grid-template-areas:
-      "a a a a b b b b"
-      "a a a a b b b b"
-      "a a a a b b b b"
-      "c c c c d d d d"
-      "c c c c d d d d"
-      "c c c c d d d d"
-      "e e e e f f f f"
-      "e e e e f f f f"
-      "e e e e f f f f"
-      "g g g g h h h h"
-      "g g g g h h h h"
-      "g g g g h h h h"
-      "i i i i j j j j"
-      "i i i i j j j j"
-      "i i i i j j j j";
-  }
-  .item1 {
+        "a a a a b b b b"
+        "a a a a b b b b"
+        "a a a a b b b b"
+        "c c c c d d d d"
+        "c c c c d d d d"
+        "c c c c d d d d"
+        "e e e e f f f f"
+        "e e e e f f f f"
+        "e e e e f f f f"
+        "g g g g h h h h"
+        "g g g g h h h h"
+        "g g g g h h h h"
+        "i i i i j j j j"
+        "i i i i j j j j"
+        "i i i i j j j j";
+}
+.item1 {
     grid-area: a;
     justify-self: center;   
-  }
-  .item2 {
+}
+.item2 {
     grid-area: b;
     justify-self: center;
-  }
-  .item3 {
+}
+.item3 {
     grid-area: c;
     justify-self: center;
-  }
-  .item4 {
+}
+.item4 {
     grid-area: d;
     justify-self: center;
-  }
-  .item5 {
+}
+.item5 {
     grid-area: e;
     justify-self: center;
-  }
-  .item6 {
+}
+.item6 {
     grid-area: f;
     justify-self: center;
-  }
-  .item7 {
+}
+.item7 {
     grid-area: g;
     justify-self: center;
-  }
-  .item8 {
+}
+.item8 {
     grid-area: h;
     justify-self: center;
-  }
+}
 
-  .center {
-      text-align: center;
-  }
+.center {
+    text-align: center;
+}
 
 /* Advanced Classes */
 
@@ -141,6 +135,12 @@ img.info {
     position: relative;
     justify-content: center;
 }
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    width: 85%;
+  }
 
 /* Animations */
 
