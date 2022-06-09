@@ -46,8 +46,11 @@ $('.eff2').waypoint(function(direction) {
   offset: '-50%'
 });
 
-// email checker by input name email
-function checkEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
+function scrollToTop() {
+  var position =
+      document.body.scrollTop || document.documentElement.scrollTop;
+  if (position) {
+      window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+      scrollAnimation = setTimeout("scrollToTop()", 30);
+  } else clearTimeout(scrollAnimation);
 }
