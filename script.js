@@ -35,22 +35,17 @@ $('.eff2').waypoint(function(direction) {
 });
   
 $('.eff2').waypoint(function(direction) {
-  if (direction === 'up') {
-    console.log('up')
-    $(this.element).addClass('FadeInOut_WP2');   
-  }
-  else {
-    $(this.element).removeClass('FadeInOut_WP2');
-  }
+    if (direction === 'up') {
+        console.log('up')
+        $(this.element).addClass('FadeInOut_WP2');   
+    }
+    else {
+        $(this.element).removeClass('FadeInOut_WP2');
+    }
 }, {
-  offset: '-50%'
+    offset: '-50%'
 });
 
-function scrollToTop() {
-  var position =
-      document.body.scrollTop || document.documentElement.scrollTop;
-  if (position) {
-      window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-      scrollAnimation = setTimeout("scrollToTop()", 30);
-  } else clearTimeout(scrollAnimation);
+BackToTop = () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
 }
