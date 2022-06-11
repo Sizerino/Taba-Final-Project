@@ -11,7 +11,7 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into votes(m1, m2, m3, m4, m5, m6) values(?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("iiiiii", $m1, $m2, $m3, $m4, $m5, $m6);
 		$execval = $stmt->execute();
 		echo $execval;
