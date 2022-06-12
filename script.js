@@ -52,10 +52,10 @@ BackToTop = () => {
 
 $("button").click(function () {
     if ($(".vote").hasClass("btn-success")) {
-      $(this).removeClass("btn-success");
-      $(this).addClass("btn-warning");
+        $(this).removeClass("btn-success");
+        $(this).addClass("btn-warning");
     }
-    else {
+    else if ($(".vote").hasClass("btn-warning")) {
         $(this).removeClass("btn-warning");
         $(this).addClass("btn-success");
     }
