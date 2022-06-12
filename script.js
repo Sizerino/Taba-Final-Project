@@ -49,3 +49,14 @@ $('.eff2').waypoint(function(direction) {
 BackToTop = () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 }
+
+$("button").click(function () {
+    if ($(".vote").hasClass("btn-success")) {
+      $(this).removeClass("btn-success");
+      $(this).addClass("btn-warning");
+    }
+    else {
+        $(this).removeClass("btn-warning");
+        $(this).addClass("btn-success");
+    }
+  });
