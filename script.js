@@ -59,4 +59,4 @@ $("button").click(function () {
         $(this).removeClass("btn-warning");
         $(this).addClass("btn-success");
     }
-  });
+});
