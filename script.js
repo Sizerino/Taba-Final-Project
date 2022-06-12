@@ -50,13 +50,34 @@ BackToTop = () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 }
 
-$("button").click(function () {
-    if ($(".vote").hasClass("btn-success")) {
-        $(this).removeClass("btn-success");
-        $(this).addClass("btn-warning");
-    }
-    else if ($(".vote").hasClass("btn-warning")) {
-        $(this).removeClass("btn-warning");
-        $(this).addClass("btn-success");
-    }
-});
+
+
+window.onload = () => {
+    $("button").click(function () {
+        if ($(".vote").hasClass("btn-success")) {
+            console.log('reached if');
+
+            $(this).removeClass("ss");
+            localStorage.setItem('clicked', 'no');
+            $(this).removeClass("btn-success");
+            $(this).addClass("btn-warning");
+        }
+        else if ($(".vote").hasClass("btn-warning")) {
+            console.log('reached else if');
+
+            $(this).addClass("ss");
+            localStorage.setItem('clicked', 'yes');
+            $(this).removeClass("btn-warning");
+            $(this).addClass("btn-success");
+        }
+    });
+    $(document).on('click', '.exit', function () {
+        if (localStorage.getItem('clicked') === 'yes') {
+            console.log('reached localstorage');
+    
+            $("ss").removeClass("btn-warning");
+            $("ss").addClass("btn-success");
+        }
+    });
+    
+}
