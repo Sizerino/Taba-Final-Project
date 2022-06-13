@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marbelobs | Voting</title>
+    <title>Marbelobs • Voting</title>
+    <link rel="icon" type="image" href="Photos/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">
-                <img src="Photos/logo.svg" width="60" height="auto" class="d-inline-block align-top" alt="">
+                <img src="Photos/logo.svg" width="45" height="auto" class="d-inline-block align-top" alt="">
                 Marbelobs
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +42,15 @@
     </nav>
 
     <div class="px-4 py-5 my-5 text-center eff2">
-        <img class="d-block mx-auto mb-4" src="Photos/logo.svg" width="100%" height="250">
+        <img class="d-block mx-auto mb-4" src="Photos/Voting.svg" width="100%" height="250">
         <h1 class="display-5 fw-bold text-white">
             You have reached the voting area!
         </h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4 text-white-50">
-                Below you can vote for your favorite marble type and see
-                the results of the voting of other people that think the same as you.
+                You can vote for your favorite marble type below and see.
+                Your vote will remain selected until you change your it.
+                Remember, you can only vote for one marble type.
             </p>
         </div>
     </div>
@@ -62,6 +64,7 @@
                 <p class="lead text-white-50">
                     <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote1.jpg" width="250" height="auto">
                     Opaque patch on opaque base
+                </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                     <button type="button" id="vote1" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                         Favorite
@@ -75,6 +78,7 @@
                 <p class="lead text-white-50">
                     <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote2.jpg" width="250" height="auto">
                     Transparent with swirl inside
+                </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                     <button type="button" id="vote2" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                         Favorite
@@ -83,11 +87,12 @@
             </div>
             <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                 <h1 class="display-6 fw-bold lh-1 text-white">
-                    Clear Color
+                    Glitterbomb
                 </h1>
                 <p class="lead text-white-50">
-                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote3.png" width="auto" height="250">
-                    Clear or transparent (any color)
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote3.jpg" width="auto" height="250">
+                    Flecks of colour on lustered finish
+                </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                     <button type="button" id="vote3" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                         Favorite
@@ -96,11 +101,12 @@
             </div>
             <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                 <h1 class="display-6 fw-bold lh-1 text-white">
-                    Swirl
+                    Figaro
                 </h1>
                 <p class="lead text-white-50">
                     <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote4.jpg" width="250" height="auto">
-                    <!-- context -->
+                    Multi coloured psychedelic patterning
+                </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                     <button type="button" id="vote4" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                         Favorite
@@ -110,11 +116,12 @@
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
                 <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                     <h1 class="display-6 fw-bold lh-1 text-white">
-                        Chaos
+                        Fiesta
                     </h1>
                     <p class="lead text-white-50">
                         <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote5.jpg" width="250" height="auto">
-                        <!-- context -->
+                        Swirls of coloured cane
+                    </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                         <button type="button" id="vote5" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                             Favorite
@@ -123,11 +130,12 @@
                 </div>
                 <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                     <h1 class="display-6 text-sm-center fw-bold lh-1 text-white">
-                        Pure White
+                        Helter Skelter
                     </h1>
                     <p class="lead text-white-50">
                         <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote6.jpg" width="250" height="auto">
-                        <!-- context -->
+                        Colorful fun twists and turns
+                    </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                         <button type="button" id="vote6" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                             Favorite
@@ -136,11 +144,12 @@
                 </div>
                 <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                     <h1 class="display-6 fw-bold lh-1 text-white">
-                        idk1
+                        Princess
                     </h1>
                     <p class="lead text-white-50">
                         <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote7.jpg" width="auto" height="250">
-                        <!-- context -->
+                        Spots of pink on lustered finish
+                    </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                         <button type="button" id="vote7" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                             Favorite
@@ -149,11 +158,12 @@
                 </div>
                 <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
                     <h1 class="display-6 fw-bold lh-1 text-white">
-                        idk2
+                        Wave Breaker
                     </h1>
                     <p class="lead text-white-50">
-                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote1.jpg" width="250" height="auto">
-                        <!-- context -->
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote8.jpg" width="250" height="auto">
+                        The inside of a crashed wave
+                    </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
                         <button type="button" id="vote8" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
                             Favorite
@@ -175,7 +185,9 @@
                     Copyright © 2021 - 2022, The Marbelobs Authors
                 </p>
                 <div class="d-grid gap-2 d-sm-flex">
-                    <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="BackToTop()">Back To Top</button>
+                    <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="BackToTop()">
+                        Back To Top
+                    </button>
                 </div>
             </div>
         </div>
