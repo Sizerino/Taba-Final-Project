@@ -43,7 +43,7 @@ BackToTop = () => {
 }
 
 $(document).ready(function() {
-    $("button").click(function() {
+    $(".vote").click(function() {
         if ($(".vote").hasClass("btn-success")) {
             localStorage.removeItem('clicked', 'yes');
             localStorage.removeItem('select', $(this).attr('id'));
