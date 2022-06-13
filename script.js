@@ -84,10 +84,8 @@ BackToTop = () => {
 //     });
 // }
 
-
-
-window.onload = () => {
-    $("button").click(function () {
+$(document).ready(function() {
+    $("button").click(function() {
         if ($(".vote").hasClass("btn-success")) {
             console.log('reached if');
 
@@ -108,9 +106,10 @@ window.onload = () => {
     if (localStorage.getItem('clicked') === 'yes') {
         console.log('reached localstorage');
 
-        $(localStorage.getItem('select').attr('id')).removeClass("btn-warning");
-        $(localStorage.getItem('select').attr('id')).addClass("btn-success");
+        var x = localStorage.getItem('select');
+        $('#' + x).removeClass("btn-warning");
+        $('#' + x).addClass("btn-success");
     } else {
         
     }  
-}
+});
