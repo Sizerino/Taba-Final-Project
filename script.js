@@ -108,10 +108,9 @@ window.onload = () => {
     if (localStorage.getItem('clicked') === 'yes') {
         console.log('reached localstorage');
 
-        $(localStorage.getItem('select')).removeClass("btn-warning");
-        $(localStorage.getItem('select')).addClass("btn-success");
+        $(localStorage.getItem('select').attr('id')).removeClass("btn-warning");
+        $(localStorage.getItem('select').attr('id')).addClass("btn-success");
     } else {
-        alert("Please pick a favorite");
+        
     }  
 }
-        
