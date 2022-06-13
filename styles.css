@@ -31,15 +31,6 @@ body {
     text-align: center;
 }
 
-.nav-line {
-    width: 1px;
-    height: 25px;
-    float: left;
-    margin: 10px;
-    border-radius: 25%;
-    color: #bbb;
-}
-
 /* Advanced Classes */
 
 hr.rounded {
