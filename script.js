@@ -91,23 +91,25 @@ window.onload = () => {
         if ($(".vote").hasClass("btn-success")) {
             console.log('reached if');
 
-            window.localStorage.removeItem('clicked', 'yes');
+            localStorage.removeItem('clicked', 'yes');
+            localStorage.removeItem('select', $(this).attr('id'));
             $(this).removeClass("btn-success");
             $(this).addClass("btn-warning");
         }
         else if ($(".vote").hasClass("btn-warning")) {
             console.log('reached else if');
 
-            window.localStorage.setItem('clicked', 'yes');
+            localStorage.setItem('clicked', 'yes');
+            localStorage.setItem('select', $(this).attr('id'));
             $(this).removeClass("btn-warning");
             $(this).addClass("btn-success");
         }
     });
-    if (window.localStorage.getItem('clicked') === 'yes') {
-        console.log('reached localstorage 1');
+    if (localStorage.getItem('clicked') === 'yes') {
+        console.log('reached localstorage');
 
-        $(this.id).removeClass("btn-warning");
-        $(this.id).addClass("btn-success");
+        $(localStorage.getItem('select')).removeClass("btn-warning");
+        $(localStorage.getItem('select')).addClass("btn-success");
     } else {
         alert("Please pick a favorite");
     }  

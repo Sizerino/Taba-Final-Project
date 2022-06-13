@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5 text-center eff2">
         <img class="d-block mx-auto mb-4" src="Photos/logo.svg" width="100%" height="250">
         <h1 class="display-5 fw-bold text-white">
             You have reached the voting area!
@@ -60,10 +60,10 @@
                     Comet
                 </h1>
                 <p class="lead text-white-50">
-                    <img class="d-block mx-auto mb-4 rimg" src="Photos/vote1.jpg" width="250" height="auto">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote1.jpg" width="250" height="auto">
                     <!-- context -->
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                    <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                    <button type="button" id="vote1" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                         Favorite
                     </button>
                 </div>
@@ -73,10 +73,10 @@
                     Cat's Eye
                 </h1>
                 <p class="lead text-white-50">
-                    <img class="d-block mx-auto mb-4 rimg" src="Photos/vote2.jpg" width="250" height="auto">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote2.jpg" width="250" height="auto">
                     <!-- context -->
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                    <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                    <button type="button" id="vote2" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                         Favorite
                     </button>
                 </div>
@@ -89,7 +89,7 @@
                     <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote3.png" width="auto" height="250">
                     <!-- context -->
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                    <button type="button" id="btn1" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                    <button type="button" id="vote3" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                         Favorite
                     </button>
                 </div>
@@ -99,10 +99,10 @@
                     Swirl
                 </h1>
                 <p class="lead text-white-50">
-                    <img class="d-block mx-auto mb-4 rimg" src="Photos/vote4.jpg" width="250" height="auto">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote4.jpg" width="250" height="auto">
                     <!-- context -->
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                    <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                    <button type="button" id="vote4" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                         Favorite
                     </button>
                 </div>
@@ -113,10 +113,10 @@
                         Chaos
                     </h1>
                     <p class="lead text-white-50">
-                        <img class="d-block mx-auto mb-4 rimg" src="Photos/vote5.jpg" width="250" height="auto">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote5.jpg" width="250" height="auto">
                         <!-- context -->
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                        <button type="button" id="vote5" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                             Favorite
                         </button>
                     </div>
@@ -126,10 +126,10 @@
                         Pure White
                     </h1>
                     <p class="lead text-white-50">
-                        <img class="d-block mx-auto mb-4 rimg" src="Photos/vote6.jpg" width="250" height="auto">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote6.jpg" width="250" height="auto">
                         <!-- context -->
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                        <button type="button" id="vote6" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                             Favorite
                         </button>
                     </div>
@@ -139,10 +139,10 @@
                         idk1
                     </h1>
                     <p class="lead text-white-50">
-                        <img class="d-block mx-auto mb-4 rimg" src="Photos/vote7.jpg" width="auto" height="250">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote7.jpg" width="auto" height="250">
                         <!-- context -->
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                        <button type="button" id="vote7" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                             Favorite
                         </button>
                     </div>
@@ -152,10 +152,10 @@
                         idk2
                     </h1>
                     <p class="lead text-white-50">
-                        <img class="d-block mx-auto mb-4 rimg" src="Photos/vote1.jpg" width="250" height="auto">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote1.jpg" width="250" height="auto">
                         <!-- context -->
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="">
+                        <button type="button" id="vote8" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote" onclick="rememberButton(this.id)">
                             Favorite
                         </button>
                     </div>
