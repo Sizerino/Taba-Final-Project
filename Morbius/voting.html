@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marbelobs • Voting</title>
+    <link rel="icon" type="image" href="Photos/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="Photos/logo.svg" width="45" height="auto" class="d-inline-block align-top">
+                Marbelobs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="voting.html">Voting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-4 py-5 my-5 text-center eff2">
+        <img class="d-block mx-auto mb-4" src="Photos/Voting.svg" width="100%" height="250">
+        <h1 class="display-5 fw-bold text-white">
+            You have reached the voting area!
+        </h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text-white-50">
+                You can vote for your favorite marble type below.
+                Your vote will remain selected until you change it.
+                Remember, you can only vote for one marble type.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-lg my-5 center">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg ">
+            <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-6 fw-bold lh-1 text-white">
+                    Comet
+                </h1>
+                <p class="lead text-white-50">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote1.jpg" width="250" height="auto">
+                    Opaque patch on opaque base
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                    <button type="button" id="vote1" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                        Favorite
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-6 fw-bold lh-1 text-white">
+                    Cat's Eye
+                </h1>
+                <p class="lead text-white-50">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote2.jpg" width="250" height="auto">
+                    Transparent with swirl inside
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                    <button type="button" id="vote2" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                        Favorite
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-6 fw-bold lh-1 text-white">
+                    Glitterbomb
+                </h1>
+                <p class="lead text-white-50">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote3.jpg" width="auto" height="250">
+                    Flecks of colour on lustered finish
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                    <button type="button" id="vote3" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                        Favorite
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-6 fw-bold lh-1 text-white">
+                    Figaro
+                </h1>
+                <p class="lead text-white-50">
+                    <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote4.jpg" width="250" height="auto">
+                    Multi coloured psychedelic patterning
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                    <button type="button" id="vote4" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                        Favorite
+                    </button>
+                </div>
+            </div>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+                <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-6 fw-bold lh-1 text-white">
+                        Fiesta
+                    </h1>
+                    <p class="lead text-white-50">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote5.jpg" width="250" height="auto">
+                        Swirls of coloured cane
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                        <button type="button" id="vote5" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                            Favorite
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-6 text-sm-center fw-bold lh-1 text-white">
+                        Helter Skelter
+                    </h1>
+                    <p class="lead text-white-50">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote6.jpg" width="250" height="auto">
+                        Colorful fun twists and turns
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                        <button type="button" id="vote6" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                            Favorite
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-6 fw-bold lh-1 text-white">
+                        Princess
+                    </h1>
+                    <p class="lead text-white-50">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote7.jpg" width="auto" height="250">
+                        Spots of pink on lustered finish
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                        <button type="button" id="vote7" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                            Favorite
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-6 fw-bold lh-1 text-white">
+                        Wave Breaker
+                    </h1>
+                    <p class="lead text-white-50">
+                        <img class="d-block mx-auto mb-4 border-dark rounded-3 shadow rimg" src="Photos/vote8.jpg" width="250" height="auto">
+                        The inside of a crashed wave
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                        <button type="button" id="vote8" class="btn btn-warning btn-primary btn-lg px-4 me-md-2 fw-bold vote">
+                            Favorite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark text-secondary px-4 py-5">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">
+                <img src="Photos/logo.svg" width="150" height="auto" class="d-inline-block">
+                Marbelobs
+            </h1>
+            <div class="mx-auto">
+                <p class="fs-5 mb-4">
+                    Copyright © 2021 - 2022, The Marbelobs Authors
+                </p>
+                <div class="d-grid gap-2 d-sm-flex">
+                    <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="BackToTop()">
+                        Back To Top
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="Plugins/jquery.min.js"></script>
+    <script src="Plugins/waypoints.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

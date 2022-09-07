@@ -1,0 +1,62 @@
+/* Elements */
+
+body {
+    background-color: #36393e !important;
+    font-family: 'Josefin Sans', sans-serif !important; 
+}
+
+/* Classes */
+
+.FadeInOut_WP1 {
+    animation-name: slidefromleft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.FadeInOut_WP2 {
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.rimg {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Advanced Classes */
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    width: 85%;
+}
+
+/* Animations */
+
+@keyframes slidefromleft {
+    from {
+        opacity: 0%;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
